@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/anasayfaFragment">
+
+    <fragment
+        android:id="@+id/anasayfaFragment"
+        android:name="com.ahmetkaya.navigationcompanentodev.AnasayfaFragment"
+        android:label="fragment_anasayfa"
+        tools:layout="@layout/fragment_anasayfa" >
+        <action
+            android:id="@+id/gecisSayfaA"
+            app:destination="@id/AFragment" />
+        <action
+            android:id="@+id/gecisSayfaX"
+            app:destination="@id/XFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/AFragment"
+        android:name="com.ahmetkaya.navigationcompanentodev.AFragment"
+        android:label="fragment_a"
+        tools:layout="@layout/fragment_a" >
+        <action
+            android:id="@+id/gecisSayfaB"
+            app:destination="@id/BFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/BFragment"
+        android:name="com.ahmetkaya.navigationcompanentodev.BFragment"
+        android:label="fragment_b"
+        tools:layout="@layout/fragment_b" >
+        <action
+            android:id="@+id/gecisSayfaY"
+            app:destination="@id/YFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/XFragment"
+        android:name="com.ahmetkaya.navigationcompanentodev.XFragment"
+        android:label="fragment_x"
+        tools:layout="@layout/fragment_x" >
+        <action
+            android:id="@+id/gecisSayfaXY"
+            app:destination="@id/YFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/YFragment"
+        android:name="com.ahmetkaya.navigationcompanentodev.YFragment"
+        android:label="fragment_y"
+        tools:layout="@layout/fragment_y" >
+        <action
+            android:id="@+id/gecisAnasayfa"
+            app:destination="@id/anasayfaFragment" />
+    </fragment>
+</navigation>
