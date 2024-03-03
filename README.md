@@ -1,6 +1,6 @@
 # Fragment Kullanımı
 
-## Kullanılan Teklonojiler 
+## Kullanılan Teknolojiler 
 - Android Studio
 - Kotlin
 - Fragment
